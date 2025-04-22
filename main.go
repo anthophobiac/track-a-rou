@@ -30,7 +30,8 @@ func main() {
 		time.Sleep(300 * time.Millisecond)
 	}
 
-	time.Sleep(10 * time.Second)
+	t.Wait()
+	t.FinalReport()
 }
 
 func workerLabel(i int) string {
